@@ -484,6 +484,9 @@
             color: #cccccc;
             margin-bottom: 0.3rem;
         }
+        .contact-details a {
+            color: #ffffff;
+        }
         
 
         .social-links {
