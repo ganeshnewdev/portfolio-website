@@ -1,87 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
 
-        // Create floating particles
-        function createParticles() {
-            const particlesContainer = document.getElementById('particles');
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh sharma - Freelance Video Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">GS</div>
+            <ul class="nav-links">
+                <li><a href="#home">ABOUT ME</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <a href="#contact" class="contact-btn">CONTACT</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="floating-card card-1">
+            <h4>Main Software</h4>
+            <p>Davinci Resolve</p>
+        </div>
+
+        <div class="floating-card card-2">
+            <h4>My Expertise</h4>
+            <div style="display: flex; gap: 10px; margin-top: 10px;">
+                <span>Davinci Resolve</span>
+                <span>After effect</span>
+                <!-- <span>JS</span> -->
+            </div>
+        </div>
+
+        <div class="floating-card card-3">
+            <h4>Additional Skills</h4>
+            <p>Photoshop</p>
+            <p>Illustrator</p>
+        </div>
+
+        <div class="hero-content">
+            <h1>I'm Ganesh Sharma</h1>
+            <h2>Freelance Video Editor</h2>
+            <div class="hero-image"></div>
+            <button class="glow-button" onclick="scrollToSection('portfolio')">VIEW MY PROJECTS</button>
+        </div>
+    </section>
+
+    <!-- Experience Badge -->
+    <div class="experience-badge">
+        <div class="experience-number">1.5</div>
+        <div class="experience-text">Years<br>Experience<br>Working</div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">WHO AM I ?</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm Ganesh Sharma, a freelance video editor helping brands and businesses create reels, ads, and
+                    cinematic videos that capture attention and drive results. I work mainly in DaVinci Resolve and
+                    After Effects, focusing on clean cuts, motion graphics, and storytelling. Alongside editing, I enjoy
+                    web development as a hobby, experimenting with HTML, CSS, Python, and WordPress. In my free time, I
+                    like playing PC games and reading story-based books to recharge my creativity.</p>
+
+            </div>
+            <div class="about-image">
+                <div
+                    style="width: 300px; height: 300px; background: linear-gradient(45deg, #00ff88, #0099cc); border-radius: 25px; margin: 0 auto; display: flex; align-items: center; justify-content: center; font-size: 4rem;">
+                    <img src="ganesh-profile.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="skills-container">
+            <h2 class="section-title">MY SKILLS</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon html-icon">
+                        🎬
+                    </div>
+                    <h3 class="skill-title">Professional Video Editing</h3>
+                    <p class="skill-description">Polished edits with cinematic flow and storytelling.
+                    </p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon css-icon">✂️</div>
+                    <h3 class="skill-title">High-Impact Reel Creation</h3>
+                    <p class="skill-description">Short-form reels optimized for attention and growth. </p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon js-icon">📜</div>
+                    <h3 class="skill-title">Scriptwriting & Creative Advice</h3>
+                    <p class="skill-description">Helping you shape scripts that truly connect.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon react-icon">📢</div>
+                    <h3 class="skill-title">Ad & Marketing Videos </h3>
+                    <p class="skill-description">Content designed to promote, sell, and engage. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-container">
+            <h2 class="section-title">MY PORTFOLIO</h2>
+            <p class="portfolio-subtitle">Reels & Videos Showcase</p>
+
+            <div class="portfolio-grid">
+                <!-- Vertical Reel Item -->
+                <div class="portfolio-item">
+                    <div class="portfolio-thumbnail vertical-reel">
+ <iframe 
+  width="400" 
+  height="700" 
+  src="https://www.youtube.com/embed/ll-hUWGIncY?autoplay=1&mute=1" 
+  title="YouTube Shorts Reel" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+
+                
+ <div class="video-overlay">
+                            <h4>Map Animation-1</h4>
+                            <p>(Geopolitical, Documentary oriented)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Static Thumbnail Items -->
+                <div class="portfolio-item">
+                    <div class="portfolio-thumbnail vertical-reel">
+                        <div class="play-button">
+                            <iframe 
+  width="400" 
+  height="700" 
+  src="https://www.youtube.com/embed/VUB6bHTFO5o?autoplay=1&mute=1" 
+  title="YouTube Shorts Reel" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+
+                        </div>
+                        <div class="video-overlay">
+                            <h4>Map Animation-2</h4>
+                            <p>(Geopolitical, Documentary oriented)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-thumbnail vertical-reel">
+                        <div class="play-button">
+                            <iframe 
+  width="400" 
+  height="700" 
+  src="https://www.youtube.com/embed/DcFWliWs1UI?autoplay=1&mute=1" 
+  title="YouTube Shorts Reel" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+
+                        </div>
+                        <div class="video-overlay">
+                            <h4>Talkng head-1</h4>
+                            <p>(For personal branding)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-thumbnail vertical-reel">
+                        <div class="play-button">
+                            <iframe 
+  width="400" 
+  height="700" 
+  src="https://www.youtube.com/embed/WAikL-aesm4?autoplay=1&mute=1" 
+  title="YouTube Shorts Reel" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+
+
+                            </video>
+                        </div>
+                        <div class="video-overlay">
+                            <h4>Talkng head-2</h4>
+                            <p>(For personal branding)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-thumbnail vertical-reel">
+                        <div class="play-button">
+                            <iframe 
+  width="400" 
+  height="700" 
+  src="https://www.youtube.com/embed/DmumR2cBcCU?autoplay=1&mute=1" 
+  title="YouTube Shorts Reel" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+
+
+                            </video>
+                        </div>
+                        <div class="video-overlay">
+                            <h4>Magnets Midea type</h4>
+                            <p>(Great for Documentry)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-thumbnail vertical-reel">
+                        <div class="play-button">
+                            <iframe 
+  width="400" 
+  height="700" 
+  src="https://www.youtube.com/embed/ADRov400ht8?autoplay=1&mute=1" 
+  title="YouTube Shorts Reel" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+
+
+                            </video>
+                        </div>
+                        <div class="video-overlay">
+                            <h4>Shivanshu Agarwal style</h4>
+                            <p>(Great for explainers)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             
-            for (let i = 0; i < 20; i++) {
-                setTimeout(() => {
-                    const particle = document.createElement('div');
-                    particle.className = 'particle';
-                    
-                    const size = Math.random() * 4 + 1;
-                    particle.style.width = size + 'px';
-                    particle.style.height = size + 'px';
-                    particle.style.left = Math.random() * 100 + '%';
-                    particle.style.animationDelay = Math.random() * 15 + 's';
-                    particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
-                    
-                    particlesContainer.appendChild(particle);
-                    
-                    setTimeout(() => {
-                        particle.remove();
-                    }, 15000);
-                }, i * 1000);
-            }
-        }
+        </div>
+    </section>
 
-        // Smooth scrolling function
-        function scrollToSection(sectionId) {
-            document.getElementById(sectionId).scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
 
-        // Portfolio modal function
-        function openPortfolioModal() {
-            alert('Portfolio videos will open here! You can integrate with YouTube, Vimeo, or your own video hosting solution.');
-        }
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2 class="section-title">CONTACT ME</h2>
+            <p class="contact-subtitle">Let's work together on your next project</p>
 
-        // Contact form submission
-        document.addEventListener('DOMContentLoaded', function() {
-            const contactForm = document.getElementById('contactForm');
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    alert('Thank you for your message! I will get back to you soon.');
-                    this.reset();
-                });
-            }
-        });
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+919057415156">9057415156</a>   
+                        </div>
+                    </div>
 
-        // Initialize particles
-        createParticles();
-        setInterval(createParticles, 15000);
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h4 id="contact2">Email</h4>
+                            <a href="mailto:olistar.vma@gamil.com">olistar.vma@gmail.com</a> <br>
+                            <a href="mailto:ganesh@olistar.in">ganesh@olistar.in</a>
+                            
 
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 100) {
-                navbar.style.background = 'rgba(0, 0, 0, 0.95)';
-            } else {
-                navbar.style.background = 'rgba(0, 0, 0, 0.8)';
-            }
-        });
+                        </div>
+                    </div>
 
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+                    <div class="contact-item">
+                        <div class="contact-icon">🌐</div>
+                        <div class="contact-details">
+                            <h4>Social Media</h4>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/ganesh-sharma-33526a362/" class="social-link linkedin">LinkedIn</a>
+                                <a href="https://www.youtube.com/@editwithpassion" class="social-link Youtube">Youtube</a>
+                                
+                                <a href="https://www.instagram.com/ganesh__sharma16?igsh=NjFvMjFqeTU4OXNw" class="social-link instagram">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="glow-button">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        // Observe skill cards
-        document.querySelectorAll('.skill-card').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(30px)';
-            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(card);
-        });
+    <!-- Footer -->
     
+
+    <script src="script.js"></script>
+</body>
+
+</html>
