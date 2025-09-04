@@ -1,28 +1,23 @@
 
         // Create floating particles
         function createParticles() {
-            const particlesContainer = document.getElementById('particles');
-            
-            for (let i = 0; i < 20; i++) {
-                setTimeout(() => {
-                    const particle = document.createElement('div');
-                    particle.className = 'particle';
-                    
-                    const size = Math.random() * 4 + 1;
-                    particle.style.width = size + 'px';
-                    particle.style.height = size + 'px';
-                    particle.style.left = Math.random() * 100 + '%';
-                    particle.style.animationDelay = Math.random() * 15 + 's';
-                    particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
-                    
-                    particlesContainer.appendChild(particle);
-                    
-                    setTimeout(() => {
-                        particle.remove();
-                    }, 15000);
-                }, i * 1000);
-            }
-        }
+    const particlesContainer = document.getElementById('particles');
+    particlesContainer.innerHTML = ""; // clear old particles
+
+    for (let i = 0; i < 20; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        const size = Math.random() * 4 + 1;
+        particle.style.width = size + 'px';
+        particle.style.height = size + 'px';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 15 + 's';
+        particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+        particlesContainer.appendChild(particle);
+    }
+}
+document.addEventListener('DOMContentLoaded', createParticles);
+
 
         // Smooth scrolling function
         function scrollToSection(sectionId) {
@@ -31,10 +26,7 @@
             });
         }
 
-        // Portfolio modal function
-        function openPortfolioModal() {
-            alert('Portfolio videos will open here! You can integrate with YouTube, Vimeo, or your own video hosting solution.');
-        }
+        
 
         // Contact form submission
         document.addEventListener('DOMContentLoaded', function() {

@@ -422,10 +422,10 @@
 
         /* Contact Section */
         .contact {
-            padding: 5rem 2rem;
-            background: rgba(0, 0, 0, 0.3);
-            display: flex;
-            
+    padding: 5rem 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+} /* <-- Add this brace */
 
         .contact-container {
             max-width: 300px;
@@ -507,8 +507,8 @@
         }
 
         .social-link.linkedin { background: linear-gradient(45deg, #0077b5, #00a0dc); }
-        .social-link.github { background: linear-gradient(45deg, #333, #666); }
-        .social-link.twitter { background: linear-gradient(45deg, #1da1f2, #0d8bd9); }
+        
+        
         .social-link.instagram { background: linear-gradient(45deg, #e1306c, #fd1d1d); }
 
         .social-link:hover {
@@ -516,9 +516,7 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
 
-        #profile {
-            height: 10px;
-        }
+        
 
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -616,4 +614,4 @@
                 opacity: 0;
             }
         }
-    }
+    
